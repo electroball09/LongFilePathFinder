@@ -14,7 +14,7 @@ if (!Directory.Exists(folder))
 
 Console.Write("Length threshold? (empty for 260)");
 int.TryParse(Console.ReadLine(), out int threshold);
-if (threshold <= 0 || threshold > 260)
+if (threshold <= 0)
     threshold = 260;
 
 void SearchDirectory(string dir)
